@@ -10,6 +10,7 @@
 		8D58ED3119D35AB5004CF1C9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D58ED3019D35AB5004CF1C9 /* LoginViewController.m */; };
 		8D58ED3419D35B58004CF1C9 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D58ED3319D35B58004CF1C9 /* Model.m */; };
 		8D58ED3619D35D52004CF1C9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D58ED3519D35D52004CF1C9 /* Default-568h@2x.png */; };
+		8D58ED3919D36052004CF1C9 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D58ED3819D36052004CF1C9 /* SettingsViewController.m */; };
 		8D68366519D3567700C0667C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D68366419D3567700C0667C /* main.m */; };
 		8D68366819D3567700C0667C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D68366719D3567700C0667C /* AppDelegate.m */; };
 		8D68366B19D3567700C0667C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D68366A19D3567700C0667C /* ViewController.m */; };
@@ -35,6 +36,8 @@
 		8D58ED3219D35B58004CF1C9 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		8D58ED3319D35B58004CF1C9 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		8D58ED3519D35D52004CF1C9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8D58ED3719D36052004CF1C9 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		8D58ED3819D36052004CF1C9 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		8D68365F19D3567700C0667C /* UnwindSegueHowTo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnwindSegueHowTo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D68366319D3567700C0667C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D68366419D3567700C0667C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				8D58ED3019D35AB5004CF1C9 /* LoginViewController.m */,
 				8D58ED3219D35B58004CF1C9 /* Model.h */,
 				8D58ED3319D35B58004CF1C9 /* Model.m */,
+				8D58ED3719D36052004CF1C9 /* SettingsViewController.h */,
+				8D58ED3819D36052004CF1C9 /* SettingsViewController.m */,
 			);
 			path = UnwindSegueHowTo;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				8D58ED3119D35AB5004CF1C9 /* LoginViewController.m in Sources */,
 				8D68366B19D3567700C0667C /* ViewController.m in Sources */,
 				8D68366819D3567700C0667C /* AppDelegate.m in Sources */,
+				8D58ED3919D36052004CF1C9 /* SettingsViewController.m in Sources */,
 				8D68366519D3567700C0667C /* main.m in Sources */,
 				8D58ED3419D35B58004CF1C9 /* Model.m in Sources */,
 			);

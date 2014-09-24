@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Login-->
+        <!--Login View Controller - Login-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" title="Login" id="vXZ-lx-hvc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" title="Login" id="vXZ-lx-hvc" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -54,7 +54,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Z6l-i3-lne" kind="push" id="Jug-U3-hwW"/>
+                                    <segue destination="1Ws-TM-oxR" kind="push" id="VEv-s9-eta"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,37 +66,79 @@
             </objects>
             <point key="canvasLocation" x="890" y="81"/>
         </scene>
-        <!--View Controller - Settings-->
+        <!--View Controller-->
+        <scene sceneID="x5X-SA-2hv">
+            <objects>
+                <viewController id="1Ws-TM-oxR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s7A-7c-PXU"/>
+                        <viewControllerLayoutGuide type="bottom" id="L3a-Ef-pGl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dfn-Fy-YcP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kgQ-ei-VP1">
+                                <rect key="frame" x="0.0" y="65" width="320" height="415"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Z6l-i3-lne" kind="embed" id="N1n-vn-4tw"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oQo-9x-NcS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ddb-25-vnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1353" y="83"/>
+        </scene>
+        <!--Settings View Controller - Settings-->
         <scene sceneID="hO7-08-jeC">
             <objects>
-                <viewController storyboardIdentifier="SettingsVC" id="Z6l-i3-lne" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsVC" id="Z6l-i3-lne" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N2v-4g-zkm"/>
                         <viewControllerLayoutGuide type="bottom" id="KY4-gX-IpJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rt8-7G-n7k">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="415"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI7-Ka-GRX">
-                                <rect key="frame" x="105" y="185" width="110" height="109"/>
+                                <rect key="frame" x="100" y="276" width="121" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Logout">
+                                <state key="normal" title="Logout via button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CKC-yt-or4" kind="unwind" unwindAction="unwindToLogin:" id="W8C-NI-bSa"/>
+                                    <action selector="logoutButtonPressed:" destination="Z6l-i3-lne" eventType="touchUpInside" id="vpG-Te-uOH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xt4-JY-U25">
+                                <rect key="frame" x="87" y="180" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout direct segue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CKC-yt-or4" kind="unwind" unwindAction="unwindToLogin:" id="rIp-SP-g5W"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="5Pd-ej-Wph"/>
+                    <connections>
+                        <segue destination="CKC-yt-or4" kind="unwind" identifier="segueSettingsToLogin" unwindAction="unwindToLogin:" id="keq-m3-ys2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEv-29-1Gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="CKC-yt-or4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1294" y="81"/>
+            <point key="canvasLocation" x="1809" y="113"/>
         </scene>
         <!--View Controller - Sign up-->
         <scene sceneID="041-3g-MHe">
